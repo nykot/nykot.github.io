@@ -11,6 +11,8 @@
     <nav>
         <h2 id="logo">Kate Huseva</h2>
         <ul class="navigation-items">
+            <li class="navigation-item"><button class="nightmode" onclick="myfunction()">Night mode</button></li>
+            <li class="navigation-item"><button class="lightmode" onclick="myfunction()">Lumos</button></li>
             <li class="navigation-item"><a href="#about">About Me</a></li>
             <li class="navigation-item"><a href="#projects">Projects</a></li>
             <li class="navigation-item"><a href="#contact">Contact</a></li>
@@ -25,9 +27,9 @@
                     Working with both side of website, UX and front side. 
                 </p>
                 <div class="icons">
-                    <img src="./recources/img/linkedin-logo.png" alt="Linkin logo" class="icon-about">
-                <img src="./recources/img/apple.png" alt="mail logo" class="icon-about">
-                <img src="./recources/img/github-sign.png" alt="GitHub logo" class="icon-about">
+                    <a href="#" class="icons-item icons-linkedin"></a>
+                    <a href="#" class="icons-item icons-apple"></a>
+                    <a href="#" class="icons-item icons-github"></a>
                 </div>
             </div>
             <div class="photo">
@@ -116,7 +118,12 @@
             </div>
          </section>
     </main>
-
     <footer>&#169 2023 Made with <span class="heart">♥</span> in the Netherland</footer>
+    <script type="text/javascript">
+        function myfunction() {
+            document.body.classList.toggle("darkmode");
+        }
+    </script>
+
 </body>
 </html>

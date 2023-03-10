@@ -2,7 +2,6 @@
 
 html {
     height: 100%;
-    background-color: #fff;
 }
 
 h2 {
@@ -16,6 +15,8 @@ h2 {
 }
 
 body {
+    background-color: #fff;
+    color: #29292a;
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
     max-width: 1200px;
@@ -64,6 +65,36 @@ nav {
 
 }
 
+.nightmode {
+    width: 100%;
+    background-color: #5359DB;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #5359DB;
+    resize: none;
+    font-size: 14px;
+    padding: 10px;
+    box-shadow: 8px 8px 16px 4px rgba(219,215,219,0.34);
+}
+
+.lightmode {
+    width: 100%;
+    background-color: #5359DB;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #5359DB;
+    resize: none;
+    font-size: 14px;
+    padding: 10px 14px;
+    margin:  0 20px;
+    box-shadow: 8px 8px 16px 4px rgba(74,74,74,0.34);
+}
+
+.lightmode {
+    display: none;
+}
 /* About */
 
 #about {
@@ -85,6 +116,26 @@ nav {
     align-items: center;
     flex-direction: row;
     flex: 0 0 48%;
+}
+
+.icons-item {
+    width: 28px;
+    height: 28px;
+    margin: 0 24px 0 0;
+
+    display: block;
+    background: no-repeat center center;
+    background-size: contain;
+}
+
+.icons-linkedin {
+    background-image: url('./img/linkedin-logo.png');
+}
+.icons-apple {
+    background-image: url('./img/apple.png');
+}
+.icons-github {
+    background-image: url('./img/github-sign.png');
 }
 
 .icon-about{
@@ -136,7 +187,7 @@ nav {
 .project-img {
     max-width: 100%;
     border-radius: 16px;
-    box-shadow: 8px 8px 16px 4px rgba(219,215,219,0.64);
+    box-shadow: 8px 8px 16px 4px rgba(219,215,219,0.24);
 }
 
 .text {
@@ -233,6 +284,7 @@ nav {
     font-size: 18px;
     font-weight: bolder;
     text-decoration: underline;
+    color: #5359DB;
 }
 
 .form {
@@ -261,6 +313,7 @@ input[type=text], input [type=email] {
 }
 
 textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     height: 150px;
     padding: 8px 8px;
@@ -289,4 +342,56 @@ input[type=submit]{
  footer {
     margin-top: 40px;
     text-align: center;
+ }
+
+ .darkmode {
+    background-color: #29292a;
+    color: #ffffff;
+ }
+
+ .darkmode .navigation-item a {
+    color: #d8d9f1;
+ }
+
+ .darkmode .form {
+    background-color: #29292a;
+    color: #fff;
+    border: 1px solid #29292a;
+    box-shadow: 8px 8px 16px 4px rgba(74, 74, 74, 0.34);
+ }
+
+ .darkmode input[type=text], .darkmode input [type=email], .darkmode textarea {
+    background-color: #373737;
+    border: 1px solid #373737;
+ }
+
+ .darkmode .nightmode{
+    background-color: #f1f1f1;
+    color: #5359DB;
+    border: 1px solid #f1f1f1;
+    box-shadow: 8px 8px 16px 4px rgba(74,74,74,0.34);
+    font-size: 14px;
+ }
+
+ /* .darkmode .mode::after {
+    content: "Lumos";
+    visibility: visible;
+    text-indent: 0;
+ } */
+
+ .darkmode .project-img {
+    box-shadow: 8px 8px 16px 4px rgba(74,74,74,0.54);
+ }
+
+ .darkmode .icons-item {
+    border-radius: 6px;
+    background-color: #ffffff;
+ }
+
+ .darkmode .lightmode{
+    display: block;
+ }
+
+ .darkmode .nightmode {
+    display: none;
  }
