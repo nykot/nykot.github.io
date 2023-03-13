@@ -395,3 +395,90 @@ input[type=submit]{
  .darkmode .nightmode {
     display: none;
  }
+
+ /* Media queris */
+
+ /* Mobile */
+ @media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+        width: 90%;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        }
+
+    h2 {
+        padding: 1px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0.1em 0;
+        font-size: 14px;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+    }
+
+    #project-1, #project-3 {
+        flex-direction: column;
+    }
+
+    #project-2 {
+        flex-direction: column-reverse;
+    }
+
+    #contact-container {
+        flex-direction: column;
+    }
+
+    
+ }
+
+ @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: landscape) {
+    body {
+        font-size: 12px;
+        width: 90%; 
+    }
+
+    #contact-container {
+        flex-direction: column;
+    }
+ }
+ 
+ /* Tablet */
+ @media only screen and (max-width: 768px) and (orientation: portrait) {
+    body {
+        font-size: 14px;
+        width: 90%; 
+    }
+
+    #contact-container {
+        flex-direction: column;
+    }    
+ }
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px)  {
+    body {
+        font-size: 14px;
+        width: 90%; 
+    }
+
+    #contact-container {
+        flex-direction: column;
+    }
+ }
+
+ 
+ 
